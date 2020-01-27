@@ -10,8 +10,6 @@ module.exports = {
     async index(req, res) {
         const posts = await Post.all();
         return res.json(posts);
-
-
     },
     async show(req, res) {
         const posts = await Post.all();
