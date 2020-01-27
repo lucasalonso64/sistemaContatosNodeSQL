@@ -1,0 +1,36 @@
+<%- contentFor('body') %>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+<button href="/home">Pesquisar</button>
+    <form>
+        <label>Pesquisar:</label>
+        <input type="text" name="titulo">
+    </form>
+<h5>Lista de contatos: </h5>
+
+    <body>
+        <table class="table table-dark">
+                <thead class="thead-dark">
+            <tr>
+                <td><h5>Nome</h5></td>
+                <td>Cargo</td>
+                <td>Ramal</td>
+                <td>Email</td>
+            </tr>
+            <%for(var i=0;i<posts.length;i++) {%>
+                <tr>
+                   <h5><td><%=posts[i].Nome%></td></h5>
+                    <td><%=posts[i].Cargo%></td>
+                    <td><%=posts[i].Ramal%></td>
+                    <td><%=posts[i].Email%></td>
+
+                </tr>
+            <%}%>
+            <tr>
+            </tr>
+        </thead>
+        </table>
+
+        
+
+    </body>

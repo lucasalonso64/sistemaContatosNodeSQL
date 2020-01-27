@@ -1,0 +1,14 @@
+http://tsdn.tecnospeed.com.br/blog-da-consultoria-tecnica-tecnospeed/post/utilizando-a-engine-ejs-para-aplicacoes-em-nodejs
+
+https://www.npmjs.com/package/express-ejs-layouts
+
+
+Instalação dos layouts:
+npm i express ejs express-ejs-layouts faker body-parse --save
+exemplo:http://tsdn.tecnospeed.com.br/blog-da-consultoria-tecnica-tecnospeed/post/utilizando-a-engine-ejs-para-aplicacoes-em-nodejs
+
+npm intall express
+npm install express-handlebars
+npm install express-ejs-layouts
+npm install sequelize
+npm install tedious

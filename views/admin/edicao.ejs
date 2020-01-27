@@ -1,0 +1,48 @@
+
+ 
+ <%- contentFor('body') %>
+ <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="/css/styles.css">
+ 
+ <h4><%- posts.id %></h4>
+<h4>Tela de edição</h4>          
+          
+
+ <form action="/admin/editar" method="POST">
+    <input type="hidden" value="<%- posts.id %>" name="id">
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Nome</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Nome" name="Nome" value="<%- posts.Nome %>">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Cargo</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel" placeholder="Cargo" name="Cargo" value="<%- posts.Cargo %>">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Setor</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Setor" name="Setor" value="<%- posts.Setor %>">
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Ramal</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Ramal" name="Ramal" value="<%- posts.Ramal %>">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control form-control-lg" id="colFormLabelLg" placeholder="E-mail" name="Email" value="<%- posts.Email %>">
+        </div>
+      </div>
+      <br>
+      <button>Salvar contato</button>
+  </form>
+   
+
+
